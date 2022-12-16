@@ -1,8 +1,9 @@
+import Myimage from "./avatar.jpg";
 function Photo()
 {
     return (
         <div>
-            <img src="./avatar.jpg" alt="You are the best"/>
+          <img src={Myimage} alt="you are awesome" style={{width:200, height:200}}></img>
         </div>
     );
 }
