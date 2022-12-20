@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  background-color: rgb(2, 248, 248);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: larger;
+  height: 100%;
+  width: 100%;
+  
+}
+div{
+  display: flex;
+    flex-direction: column ;
+    justify-content:space-evenly;
+    align-items: center;
+  
+}
+h3{ color: rgb(129, 7, 243);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
