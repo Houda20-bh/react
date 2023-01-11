@@ -15,6 +15,7 @@ function Book({book}) {
   };
     return (
         <div>
+      
             <Card style={{ width: '25rem' }}>
       <Card.Img variant="top" src={book.urlImg} />
       <Card.Body>

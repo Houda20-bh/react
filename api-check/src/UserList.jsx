@@ -6,8 +6,7 @@ const UserList = () => {
 
   useEffect(() => {
     axios.get(`https://jsonplaceholder.typicode.com/users`).then((res) => {
-      const responseUsers = res.data;
-      setUsers(responseUsers);
+      setUsers(res.data);
     });
   }, []);
 

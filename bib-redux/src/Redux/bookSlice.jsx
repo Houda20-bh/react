@@ -30,12 +30,17 @@ const bookSlice=createSlice ({
             state.books = state.books.filter((el)=> el.id !== action.payload)
      },
      upDateBook:(state,action)=>{
-      state.books = state.books.map((el)=>el.id=== action.payload? 
+      state.books = state.books.map((el)=>el.id=== action.payload.id? 
       el=action.payload.upDatedBook: el)
      },
+     searchBook: (state,action) =>{
+      state.books= state.books.filter((el)=> 
+      el.title.trim().toLocaleLowerCase().includes(action.payload))
+     },
+
          },
       
   
 })
-export const{addToBib,deleteToBib,upDateBook}=bookSlice.actions;
+export const{addToBib,deleteToBib,upDateBook, searchBook}=bookSlice.actions;
 export default bookSlice.reducer;
