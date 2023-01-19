@@ -6,7 +6,7 @@ app.use(function (req, res, next) {
   const date = new Date();
   if (
     date.getDay >= 1 &&
-    date.getDay <= 5 &&
+    date.getDay <= 6 &&
     date.getHours >= 9 &&
     date.getHours <= 17
   ) {
