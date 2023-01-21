@@ -13,7 +13,7 @@ res.sendFile(path.join(__dirname,'./views/index.html'))
  // result route
  app.post("/", (req,res)=>{
     const sum = Number (req.body.num1 )+ Number (req.body.num2);
-    res.send('<h4><i>your resulat is:</i></h4>'+'<h3>' + sum +'</h3>');
+    res.send('<h4><i>your resulat is:</i></h4>'+'<h3> <button>' + sum +'</h3> </button>');
  });
  // listen to the server
 

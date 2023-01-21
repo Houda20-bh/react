@@ -9,7 +9,7 @@ app.use((req, res, next) => {
   const time = new Date();
   const day = time.getDay();
   const hour = time.getHours();
-  if (day >= 1 && day <= 5 && hour >= 9 && hour <= 20) {
+  if (day >= 1 && day <= 6 && hour >= 7 && hour <= 20) {
     next();
   } else {
     res.render('404');
@@ -22,7 +22,7 @@ app.set('view engine','pug');
 // home route
 app.get('/', (req,res)=>{
 res.render('index', {
-    title:'thanks'
+    title:'Welcome to our Home page'
 });
 });
 // contact route
